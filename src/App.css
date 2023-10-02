@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Allison&family=Dancing+Script&family=Oswald:wght@200;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allison&family=Dancing+Script&family=Dosis:wght@300;500&family=Oswald:wght@200;400;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+.main-body{
+  width: 100vw;
+  height: 100vh;
+  background-image: url('contents/shop.avif');
+  background-repeat: no-repeat;
+  background-size:cover;
+  display: flex;
+  background-position: center; 
+  flex-direction: column;
+}
+
+.hero{
+  font-family: 'Allison', cursive;
+  color: white;
+  margin-left: 10%;
+  margin-bottom: 20rem;
+  font-size: 3rem;
+
+}
+
+.navbody{  
+  position: sticky;
+  top: 0;
+  width: 100vw;
+  background-color: rgba(23, 23, 23, .5);
+}
+
+.navbar{
+  color: white;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar ul{
+  display: flex;
+}
+
+.navbar p{
+  margin: 1rem;
+  margin-right: 3rem;
+}
+
+.navbar h1{
+  margin: 1;
+  margin-left: 3rem;
+}
+
+li{
+  list-style: none;
+  margin: 1rem;
+}
+
+.button:hover{
+  color: aqua;
+  cursor: pointer;
+}
+
+.deal-body{
+  font-family: 'Dosis', sans-serif;
+  max-height: fit-content;
+  min-height: 100vh;
+  background-color: rgb(255, 255, 255);
+}
+
+.deal-body .head-text{
+  padding-top: 2rem;
+  color: #282c34;
+  font-size: 5rem;
+}
+
+.deal-body h3{
+  color: #282c34;
+  font-size: 1.5rem;
+}
+
+.product-grid{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.product-card{
+  border: 2px solid#6262624b;
+  border-radius: 2rem;
+  width: 20rem;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 5px 5px 5px #6262624b;
+}
+
+
+.product-card img{
+  border-radius: 2rem;
+  height: 16rem;
+  width: 18rem;
+  margin: 1rem;
+}
+
+.buy-info{
+  margin-top: 1rem;
+  display: flex;
+}
+
+.text-content{
+  width: 8rem;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+
+.product-card p{
+  width: 16rem;
+  color: rgb(0, 104, 0);
+}
+
+.product-card .stars{
+  color: rgb(198, 192, 0);
+}
+
+.buy-button{
+  margin-left: 5rem;
+  margin-top: 2rem;
+}
+
+.product-card button{
+  background-color: rgba(43, 173, 43, .2);
+  border: 1px solid rgba(43, 173, 43, .2);
+  color: rgb(0, 104, 0);
+  border-radius: 2rem;
+  width: 3rem;
+  height: 3rem;
+  align-self: flex-end;
+  transition: 0.2s;
+}
+
+.product-card button:hover{
+  font-size: large;
+  background-color: rgba(43, 173, 43, .4);
+}
+
+.product-grid{
+  padding-top: 5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 20rem);
+  gap: 2rem;
+}
+
+@media screen and (max-width: 1060px) {
+  .product-grid{
+    padding-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 20rem);
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .product-grid{
+    padding-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(1, 20rem);
+    gap: 2rem;
+  }
+}
+
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
